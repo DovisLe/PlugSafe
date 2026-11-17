@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>PlugSafe</AssemblyName>
+    <RootNamespace>PlugSafe</RootNamespace>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Product>PlugSafe</Product>
+    <Version>1.0.0</Version>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <!-- Custom-painted controls expose plain properties; no designer serialization needed. -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+    <!-- Idle-friendly runtime: no background GC thread, no tiered re-JIT work after startup. -->
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <TieredPGO>false</TieredPGO>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="icon.ico" LogicalName="PlugSafe.icon.ico" />
+  </ItemGroup>
+
+</Project>

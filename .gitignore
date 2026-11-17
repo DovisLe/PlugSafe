@@ -1,0 +1,12 @@
+# Build output
+bin/
+obj/
+app/
+release/
+dist/
+*.zip
+
+# Settings, drive list and logs, if you run the exe from this folder
+config.json*
+*.log
+*.log.old
